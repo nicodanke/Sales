@@ -1,12 +1,12 @@
 ﻿namespace Sales.Services
 {
-    using Common.Models;
     using System;
     using System.Collections.Generic;
     using System.Net.Http;
     using System.Text;
     using System.Threading.Tasks;
     using Newtonsoft.Json;
+    using Sales.Common.Models;
 
     public class ApiService
     {
