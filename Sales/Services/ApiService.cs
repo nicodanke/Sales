@@ -39,7 +39,7 @@
             {
                 return new Response
                 {
-                    ISuccess = false,
+                    IsSuccess = false,
                     Message = ex.Message,
                 };
             }
