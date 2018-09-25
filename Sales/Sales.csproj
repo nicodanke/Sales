@@ -15,18 +15,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="Resources\Resources.resx" />
-    <EmbeddedResource Remove="Resources\Resource.resx" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Update="Resources\Resource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\ProductsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <Compile Remove="Resources\Resources.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Remove="Resources\Resources.Designer.cs" />
-    <Compile Remove="Resources\Resource.Designer.cs" />
+    <Compile Update="Resources\Resource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>
