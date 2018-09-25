@@ -48,7 +48,7 @@
             this.IsRefreshing = true;
             var url = Application.Current.Resources["UrlAPI"].ToString();
             var prefix = Application.Current.Resources["UrlPrefix"].ToString();
-            var controller = Application.Current.Resources["UrlController"].ToString();
+            var controller = Application.Current.Resources["UrlProductsController"].ToString();
             var response = await this.apiService.GetList<Product>(url, prefix, controller);
             if (!response.IsSuccess)
             {

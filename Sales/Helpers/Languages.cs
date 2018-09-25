@@ -39,4 +39,3 @@ namespace Sales.Helpers
         }
     }
 }
-}
