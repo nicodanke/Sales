@@ -1,7 +1,7 @@
 ﻿namespace Sales.Helpers
 {
     using System;
-    class PlatformCulture
+    public class PlatformCulture
     {
         public PlatformCulture(string platformCultureString)
         {
@@ -34,5 +34,4 @@
             return PlatformString;
         }
     }
-}
 }
