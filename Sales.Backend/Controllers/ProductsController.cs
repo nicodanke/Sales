@@ -131,6 +131,7 @@ namespace Sales.Backend.Controllers
                 {
                     pic = FilesHelper.UploadPhoto(view.ImageFile, folder);
                     pic = $"{folder}/{pic}";
+                    //hola
                 }
 
                 var product = this.ToProduct(view, pic);
