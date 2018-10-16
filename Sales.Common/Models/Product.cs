@@ -34,6 +34,15 @@ namespace Sales.Common.Models
         [DataType(DataType.Date)]
         public DateTime PublishOn { get; set; }
 
+        public string imageFullPath{
+            get{
+                if(string.IsNullOrEmpty(this.ImagePath)){
+                    return null;
+                }
+                return $"http://salesnico.somee.com/{this.ImagePath.Substring(1)}";
+            }
+        }
+
         public override string ToString()
         {
             return this.Description;
